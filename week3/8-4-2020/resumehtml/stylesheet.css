@@ -1,0 +1,182 @@
+body{
+    width: 904px;
+    height: 1280px;
+    margin: auto;
+    text-decoration: none;
+    
+}
+.page{
+    height: 280px;
+    background-color:rgb(86, 86, 86);
+    position: relative;
+    float: top;
+
+}
+#col{
+    height: 30px;
+    width: 904px;
+    background-color:white;
+    position: absolute;
+    margin-top: 220px;
+
+}
+
+#yellowblock {
+    height: 85px;
+    width: 452px;
+    background-color:rgb(251, 190, 39);
+    position: absolute;
+    margin: 195px 0px 226px 226px;
+    border-radius: 10px;
+
+}
+#yellowblock div h1{
+    
+
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    
+    font-weight: lighter;
+    margin: 15px;
+    margin-left: 60px;
+   
+
+}
+#img{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute ;
+    margin-left: 352px;
+    margin-top: 30px;
+}
+#yellowblock div{
+    
+    position: relative;
+    border-radius: 10px;
+    height: 85px;
+    width: 452px;
+}
+
+.line{
+    height: 35px;
+    background-color: white;
+    
+
+}
+.line nav{
+    height: 2px;
+    background-color:rgb(86, 86, 86);
+
+}
+.line p{
+ text-align: center;
+}
+
+.LeftElements {
+    float: left;
+    width: 49%;
+    height: 1000px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.middle_line{
+   width : 2px;
+  float: left;
+  height: 1000px;
+
+}
+
+.middle_line nav{
+    width:2px;
+    height: 100%;
+    background-color:rgb(86, 86, 86);
+}
+.RightElements {
+    float: right;
+    width: 49%;
+    height: 1000px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.LeftElements .WorkExperience ul{
+    display: inline;
+}
+
+#profile{
+    position: relative;
+}
+
+#profile #image{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(86, 86, 86);
+}
+.nameHedder{
+    margin-left: 40px;
+}
+
+#Skills{
+    position: relative;
+
+}
+#Skills #image2{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(86, 86, 86);
+}
+.nameHedder1{
+    margin-left: 40px;
+}
+#Skills  .subhedder{
+    text-align: center;
+
+}
+ .skillsProgress ul {
+     list-style: none;
+     display: inline;
+}
+
+progress{
+    align-self: initial;
+}
+
+#WorkExperience{
+    position: relative;
+    
+}
+#WorkExperience #image3{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(86, 86, 86);
+}
+#WorkExperience1{
+    position: relative;
+}
+#WorkExperience1 #image4{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(86, 86, 86);
+}
+#WorkExperience1 .ull ul{
+    list-style: none;
+}
+#Education{
+    position: relative;
+}
+
+#Education #image5{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(86, 86, 86);
+}
+

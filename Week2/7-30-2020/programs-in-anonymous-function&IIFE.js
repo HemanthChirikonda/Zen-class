@@ -4,12 +4,12 @@ for(let i=0; i<100; i++){
 }
 console.log(arry);
 let oddArry= (function(arry){ return arry.filter(a=> a%2!==0 );})(arry);
-console.log(oddArry); // IIFE
+console.log(oddArry);     // IIFE
 
 function even(arry){ return arry.filter(a=> a%2===0 );}
  let evenArry =even(arry);
- console.log(evenArry); ///anonymous function 
-
+ console.log(evenArry);    ///anonymous function 
+  
 
 let sumALLnumbers = (function(arry){ let sum=0;for(i in arry){ sum+=arry[i];} return sum;})(arry);
 console.log(sumALLnumbers);
@@ -34,29 +34,24 @@ return newArry;
 let primeNumbersArry= Prime(arry);  ///anonymous function 
 
 console.log(primeNumbersArry);
-
-/*
+let name = ['guvi',]
 function palindromes(arry){
-
+ let newarry=[];
 	for(i in arry){
 		var re = /[\W_]/g;
 		if(typeof(arry[i]) === 'string'){
 			var lowRegStr = arry[i].toLowerCase().replace(re, '');
 			var reverseStr = lowRegStr.split('').reverse().join(''); 
-		 return reverseStr === lowRegStr;
-		}else {
-		 var lowRegStr = arry[i].split('').join('');
-			var reverseStr = lowRegStr.split('').reverse().join(''); 
-		 return reverseStr === lowRegStr;
+		 if(reverseStr === lowRegStr){
+		 	newarry.push(arry[i]);
+		 }
 		}
-		 
-	}
 }
-
+}
 let palindromesArry= palindromes(arry);
 console.log(palindromesArry);
 
-*/
+
 function meadin(arry){
 let total= arry.reduce((total, currentval)=> (total+currentval),0);
 console.log(total);

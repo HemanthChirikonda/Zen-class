@@ -29,7 +29,7 @@ console.log(movieArray);
 
 let moviesWithRatingPG = movieArray.filter(a=> a.ratings==='PG');
 
-console.log(moviesWithRatingPG)
+console.log(moviesWithRatingPG);
 
 
 
