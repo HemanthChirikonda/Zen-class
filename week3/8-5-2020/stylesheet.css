@@ -1,0 +1,659 @@
+body{
+    text-decoration: none;
+margin: auto;
+width: 960px;
+background-color: whitesmoke;
+
+
+}
+.mainContainer{
+    top: 15%;
+    height: 5000px;
+     background-color: #e6e5e6;
+        border-radius: 10mm;
+        z-index: 0;
+        overflow: hidden;
+        position: relative;
+
+}
+.FirstSection{
+    position:absolute;
+    padding: 50px;
+    content: " ";
+    display:block;
+    width: 120%;
+    height: 12%;
+    left: -15%;
+    top: -2%;
+    transform: rotate(-3deg);
+background-color: rgb(35,23,41);
+
+z-index: 10;
+
+}
+
+.FirstSection div{
+    transform: rotate(2deg);
+   
+}
+
+.secondSection {
+    z-index: 9;
+    position:absolute;
+    content: " ";
+    display:block;
+    width: 120%;
+    height: 11%;
+    transform: rotate(-3deg);
+   background-color:rgb(242,232,221);
+   border: indigo;
+   top: 10%;
+   left: -8%;
+   color: indigo;
+   
+}
+/*
+.secondSection div{
+    transform: rotate(2deg);
+    font-size: 50px;
+    padding: 10%;
+    top: 10%;
+    z-index: 5;
+    color: indigo;
+    clear: (0mm,10mm, 10mm, 10mm);
+}
+.image{
+    z-index: 3;
+    opacity: 50%;
+}*/
+.image{
+    z-index: 15;
+}
+
+.thirdSection{
+    position: absolute;
+    z-index: 8;
+    top:20%;
+    left: -8%;
+    width: 120%;
+    height: 11%;
+    transform: rotate(-3deg);
+    background-color:rgb(36,24,25);
+
+}
+
+
+.fourthSection{
+    position: absolute;
+    z-index: 7;
+    top:30%;
+    left: -8%;
+    transform: rotate(-3deg);
+    width: 120%;
+    height: 11%;
+    background-color:rgb(207,165,168);
+
+}
+.fifthSection{
+    position: absolute;
+    z-index: 6;
+    top:40%;
+    left: -8%;
+    transform: rotate(-3deg);
+    width: 120%;
+    height: 10%;
+    background-color:rgb(241,162,180);
+}
+.sisthSection{
+    position: absolute;
+    z-index: 5;
+    top:50%;
+    left: -8%;
+    transform: rotate(-3deg);
+    width: 120%;
+    height: 10%;
+    background-color:rgb(184,194,190);
+}
+
+.seventhSection{
+    position: absolute;
+    z-index: 4;
+    top:60%;
+    left: -8%;
+    transform: rotate(-3deg);
+    width: 120%;
+    height: 10%;
+    background-color:rgb(35,23,41);
+
+}
+
+.eighthSection{
+    position: absolute;
+    z-index: 3;
+    top:70%;
+    left: -8%;
+    transform: rotate(-3deg);
+    width: 120%;
+    height: 10%;
+    background-color:rgb(247,194,201);
+}
+
+
+.ninthSection{
+    position: absolute;
+    z-index: 2;
+    top:80%;
+    left: -8%;
+    transform: rotate(-3deg);
+    width: 120%;
+    height: 10%;
+    background-color:rgb(254,226,203);  
+}
+
+.tenthSection{
+
+    position: absolute;
+    z-index: 1;
+    top:90%;
+    left: -8%;
+    transform: rotate(-3deg);
+    width: 120%;
+    height: 10%;
+    background-color:rgb(221,220,221);  
+    
+}
+
+.FirstSection div{
+    
+  margin-left: 10%;
+    font-size: 20px;
+    top: 40%;
+    transform: rotate(3deg);
+    margin: auto;
+font-size: 2em;
+    height: 10%;
+    position: relative;
+    z-index: 11;
+    text-align: center;
+    color: rgb(227,191,190);
+    opacity: 50%;
+}
+
+.secondSection div{
+    margin-left: 10%;
+      top: 25%;
+      transform: rotate(3deg);
+      margin: auto;
+      height: 10%;
+      position: relative;
+      z-index: 11;
+      text-align: center;
+      color: black;
+      text-align: center;
+    
+  }
+  .secondSection h1{
+font-size: 50px; 
+font-weight: lighter; 
+float: left;
+  }
+  .secondSection h2{
+      margin-top: 7%;
+      display: block;
+  }
+
+  .secondSection h3{
+      margin-top: 5%;
+      position: absolute;
+      top: 100%;
+    display: block;
+}
+.secondSection p{
+    width: 38%;
+    margin-top: 8%;
+    position: absolute;
+    top: 100%;
+  display: block;
+}
+  
+.thirdSection div{
+    margin-left: 10%;
+      top: 25%;
+      transform: rotate(3deg);
+      margin: auto;
+      height: 10%;
+      position: relative;
+      z-index: 11;
+      text-align: center;
+      color: black;
+      text-align: center;
+      color: whitesmoke;
+      opacity: 50%;
+      font-weight: lighter;
+    
+  } 
+
+  .thirdSection h1{
+      width: 30%;
+    font-size: 35px; 
+    font-weight: lighter; 
+    float: right;
+    padding-right: 25%;
+      }
+
+      .thirdSection p{
+        width: 38%;
+        margin-top: 5%;
+       position: relative;
+        top: 100%;
+        left: 35%;
+     float: right;
+    }
+  
+
+
+  .fourthSection div{
+    margin-left: 10%;
+      top: 25%;
+      transform: rotate(3deg);
+      margin: auto;
+      height: 10%;
+      position: relative;
+      z-index: 11;
+      text-align: center;
+      color: black;
+      text-align: center;
+    
+  }
+  
+  
+  .fourthSection div{
+    margin-left: 10%;
+      top: 25%;
+      transform: rotate(3deg);
+      margin: auto;
+      height: 10%;
+      position: relative;
+      z-index: 11;
+      text-align: center;
+      color: black;
+      text-align: center;
+      color: whitesmoke;
+      opacity: 50%;
+      font-weight: lighter;
+      right: 25%;
+    
+  } 
+
+  .fourthSection h1{
+      width: 30%;
+    font-size: 35px; 
+    font-weight: lighter; 
+    float: right;
+    padding-right: 25%;
+      }
+
+      .fourthSection p{
+        width: 38%;
+        margin-top: 5%;
+       position: relative;
+        top: 100%;
+        left: 35%;
+     float: right;
+    }
+
+
+
+
+
+
+
+
+
+  .fifthSection div{
+    margin-left: 10%;
+      top: 25%;
+      transform: rotate(3deg);
+      margin: auto;
+      height: 10%;
+      position: relative;
+      z-index: 11;
+      text-align: center;
+      color: black;
+      text-align: center;
+    
+  } 
+
+
+  .fifthSection div{
+    margin-left: 10%;
+      top: 25%;
+      transform: rotate(3deg);
+      margin: auto;
+      height: 10%;
+      position: relative;
+      z-index: 11;
+      text-align: center;
+      color: black;
+      text-align: center;
+      color: whitesmoke;
+      opacity: 50%;
+      font-weight: lighter;
+    
+  } 
+
+  .fifthSection h1{
+      width: 30%;
+    font-size: 35px; 
+    font-weight: lighter; 
+    float: right;
+    padding-right: 25%;
+      }
+
+      .fifthSection p{
+        width: 38%;
+        margin-top: 5%;
+       position: relative;
+        top: 100%;
+        left: 35%;
+     float: right;
+    }
+
+
+
+
+
+  
+  .sisthSection div{
+    margin-left: 10%;
+      top: 25%;
+      transform: rotate(3deg);
+      margin: auto;
+      height: 10%;
+      position: relative;
+      z-index: 11;
+      text-align: center;
+      color: black;
+      text-align: center;
+    
+  } 
+
+  .sisthSection div{
+    margin-left: 10%;
+      top: 25%;
+      transform: rotate(3deg);
+      margin: auto;
+      height: 10%;
+      position: relative;
+      z-index: 11;
+      text-align: center;
+      color: black;
+      text-align: center;
+    
+  }
+  .sisthSection h1{
+font-size: 50px; 
+font-weight: lighter; 
+float: left;
+  }
+  .sisthSection h2{
+      margin-top: 7%;
+      display: block;
+  }
+
+  .sisthSection h3{
+      margin-top: 8%;
+      position: relative;
+      top: 100%;
+      float: left;
+      right: 65%;
+    display: block;
+}
+.sisthSection p{
+    width: 38%;
+    margin-top: 8%;
+    position: absolute;
+    top: 100%;
+  display: block;
+}
+
+
+  .seventhSection div{
+    margin-left: 10%;
+      top: 25%;
+      transform: rotate(3deg);
+      margin: auto;
+      height: 10%;
+      position: relative;
+      z-index: 11;
+      text-align: center;
+      color: black;
+      text-align: center;
+    
+  } 
+
+  .seventhSection div{
+    margin-left: 10%;
+      top: 25%;
+      transform: rotate(3deg);
+      margin: auto;
+      height: 10%;
+      position: relative;
+      z-index: 11;
+      text-align: center;
+      color: black;
+      text-align: center;
+      color: whitesmoke;
+      opacity: 50%;
+      font-weight: lighter;
+      right: 25%;
+    
+  } 
+
+  .seventhSection h1{
+      width: 30%;
+    font-size: 35px; 
+    font-weight: lighter; 
+    float: right;
+    padding-right: 25%;
+      }
+
+      .seventhSection p{
+        width: 38%;
+        margin-top: 5%;
+       position: relative;
+        top: 100%;
+        left: 35%;
+     float: right;
+    }
+
+
+
+
+
+
+  
+  .eighthSection div{
+    margin-left: 10%;
+      top: 25%;
+      transform: rotate(3deg);
+      margin: auto;
+      height: 10%;
+      position: relative;
+      z-index: 11;
+      text-align: center;
+      color: black;
+      text-align: center;
+    
+  } 
+
+
+  .eighthSection div{
+    margin-left: 10%;
+      top: 25%;
+      transform: rotate(3deg);
+      margin: auto;
+      height: 10%;
+      position: relative;
+      z-index: 11;
+      text-align: center;
+      color: black;
+      text-align: center;
+    
+  }
+  .eighthSection h1{
+font-size: 50px; 
+font-weight: lighter; 
+float: left;
+  }
+  .eighthSection h2{
+      margin-top: 7%;
+      display: block;
+  }
+
+  .eighthSection h3{
+      margin-top: 8%;
+      position: relative;
+      top: 100%;
+      float: left;
+      right: 65%;
+    display: block;
+}
+.eighthSection p{
+    width: 38%;
+    margin-top: 8%;
+    position: absolute;
+    top: 100%;
+  display: block;
+}
+
+  .ninthSection div{
+    margin-left: 10%;
+      top: 25%;
+      transform: rotate(3deg);
+      margin: auto;
+      height: 10%;
+      position: relative;
+      z-index: 11;
+      text-align: center;
+      color: black;
+      text-align: center;
+    
+  } 
+
+
+  
+
+  .ninthSection div{
+    margin-left: 10%;
+      top: 25%;
+      transform: rotate(3deg);
+      margin: auto;
+      height: 10%;
+      position: relative;
+      z-index: 11;
+      text-align: center;
+      color: black;
+      text-align: center;
+      color: rgb(50,50,50);
+      opacity: 50%;
+      font-weight: lighter;
+      right: 25%;
+    
+  } 
+
+  .ninthSection h1{
+      width: 30%;
+    font-size: 35px; 
+    font-weight: lighter; 
+    float: right;
+    padding-right: 25%;
+      }
+
+      .ninthSection p{
+        width: 38%;
+        margin-top: 5%;
+       position: relative;
+        top: 100%;
+        left: 35%;
+     float: right;
+    }
+
+    .tenthSection div{
+        margin-left: 10%;
+          top: 25%;
+          transform: rotate(3deg);
+          margin: auto;
+          height: 10%;
+          position: relative;
+          z-index: 11;
+          text-align: center;
+          color: black;
+          text-align: center;
+          color: rgb(50,50,50);
+          opacity: 50%;
+          font-weight: lighter;
+          right: 25%;
+        
+      } 
+    
+
+    .tenthSection p{
+        width:50%;
+       position: relative;
+        left: 0%;
+     float: right;
+    }
+
+ 
+
+.frame{
+    top: 1%;
+   margin: auto;
+    width: 90%;
+    height: 98%;
+   border-radius: inherit;
+    border: whitesmoke double;
+    position: relative;
+    z-index: 12;
+}
+
+.image5 img{
+    
+    position: absolute;
+    z-index: 7;
+    top:30%;
+    left: 10%;
+    transform: rotate(-3deg);
+    width: 150%;
+    opacity: 10%;
+    
+    
+}
+.image6 img{
+    
+    position: absolute;
+    z-index: inherit;
+    top:inherit;
+    left: -5%;
+    right: -20%;
+    transform: rotate(-3deg);
+    width: inherit;
+  
+    opacity: 8%;
+    
+    
+}
+
+.image8 img{
+    
+    position: absolute;
+    z-index: inherit;
+    top:inherit;
+    left: -5%;
+    right: -20%;
+    transform: rotate(-3deg);
+    width: 100%;
+    opacity: 10%;
+    
+}
