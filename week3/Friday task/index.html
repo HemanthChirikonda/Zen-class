@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    
+    .icongroup i { 
+            position: absolute;
+            background-color:#e5e5e5;
+            padding:10px;
+            align-items: center;
+            width: 15px;
+            border-radius: 1px;
+            border:#e5e5e5;
+          
+        } 
+        .icongroup{
+        border: black;
+            margin-top: 10px;
+           
+            margin: auto;
+            padding-top: 20px;
+           
+        }
+        
+        body{
+            background-color: aquamarine;
+          width: 960px;
+          margin: auto;
+
+        }
+        .icongroup input{
+            width: 100%;
+            border:#e5e5e5;
+            
+        padding: 10px;
+        padding-left: 40px;
+        border-radius: 4px;
+    
+        }
+        select{
+            width: 120%;
+            border:#e5e5e5;
+           color:grey ;
+        padding: 10px;
+        padding-left: 40px;
+        padding-right: 25px;
+        border-radius: 2px;
+
+        }
+        label{
+            font-size: 20px;
+        }
+       
+.group{
+
+position: relative;
+   background-color: lightgrey;
+    border-radius: 4px;
+    padding: 50px;
+    margin: auto;
+    margin-top: 10px;
+ max-width: 500px;
+}
+table{
+ 
+margin: auto;
+   }
+   
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="group"> 
+    <a style="float: right;" href="index2.html"> Next Task</a>
+        <form  name="myForm" action="#" onsubmit="return validateForm()" method="post" required >
+    <table>
+        <tr>
+            <td>
+                <label for="userName"> User Name</label>
+            </td>
+            <td>
+                <div class="icongroup">
+                    <i  class="fa fa-user icon"></i> 
+                    <input class="input-field" type="text" name="username" placeholder="Full name " maxlength="100" required >
+                   </div> 
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="addressline1">Address Line 1</label>
+            </td>
+            <td>
+
+                <div class="icongroup">   
+                    <i class="fa fa-address-book-o"></i>
+                 <input class="input-field"  name="username" type="text" placeholder="AddressLine1" maxlength="100"  required> 
+             </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="addressline 2">Address Line 2</label>
+            </td>
+            <td>
+                <div class="icongroup">
+                    <i class="fa fa-address-book-o"></i> 
+                <input class="input-field" type="text" name="username" placeholder="AddressLine2" maxlength="100"  required>
+             </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="City">City</label>
+            </td>
+            <td>
+                 <div class="icongroup"> <i class="fa fa-youtube icon"></i> 
+                    <input class="input-field" type="text" name="username" placeholder="City" maxlength="100"  required> </div>
+             </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+             <label for="State/Provence/Region">State/Provence/Region</label>
+            </td>
+            <td>
+                
+                <div class="icongroup">
+                    <i class="fa fa-user icon"></i> 
+                    <input class="input-field" type="text" name="username" placeholder="State/Provence/Region"  maxlength="100"  required>  
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+        <label for="Postal Code/ZIP">Postal Code/ZIP</label>
+            </td>
+            <td>
+                
+                  
+                <div class="icongroup"> <i class="fa fa-map-marker"></i> 
+                    <input class="input-field" type="text" name="username" placeholder="Postal Code/ZIP"  maxlength="100"  required>  </div>
+             </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="Country">Country</label>
+
+            </td>
+            <td>
+                
+                <div class="icongroup">
+                    <i class="fa fa-map-o" aria-hidden="true"></i>
+                    <select name="country" id="">
+                        <option value="0">country</option>
+                        </select>
+                   </div>
+             </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="Email">Email</label>
+            </td>
+            <td>
+                
+                <div class="icongroup">
+                    <i class="fa fa-user icon"></i>
+                    <input class="input-field" type="Email" placeholder="Email" name="username"  maxlength="100" size="25"  required> 
+                   </div>
+             </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+             <label for="PhoneNumber">Phone Number</label>
+            </td>
+            <td>
+                
+                <div class="icongroup">
+                    <i class="fa fa-user icon"></i> 
+                    <input class="input-field" type="phonenumber" name="username" placeholder="Phone number" maxlength="100"  required>  
+                   </div>
+            </td>
+        </tr>
+     
+       
+       <tr>
+        <input type="submit"   value="submit" onclick="validateForm()" style="position:absolute; margin-top: 90%; margin-left: 35%;">
+       
+       </tr>
+      
+    </table> 
+    
+     </form>  
+</div>
+<script>
+    
+    function validateForm() {
+  var x = document.forms["myForm"]['username'].value;
+  if (x !== "") {
+    alert("Thank you...!");
+    return true;
+  } else{
+    alert("Please fill the form...");
+    return false;   
+  }
+}
+</script>
+</body>
+</html>
