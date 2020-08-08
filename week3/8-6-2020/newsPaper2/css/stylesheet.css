@@ -8,3 +8,4 @@ body{
 p{
     font-size: 12px;
 }
+$enable-responsive-font-sizes: true;
