@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: 400 46px "Quicksand", sans-serif;
+    color: #e5e5ee5;
+    text-align: center;
+}
+
+body {
+    display: block;
+    margin: 8px;
+}
+.top .screen {
+    height: 90px;
+    width: 100%;
+    padding: 0 10px;
+    background: rgb(10,240,100);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    line-height: 90px;
+    color: rgb(2, 49, 10);
+    text-align: right;
+    overflow: auto;
+}
+
+
+
+#calculator {
+    width: 325px;
+    height: auto;
+    margin: 100px auto;
+    padding: 20px 20px 9px;
+    border-radius: 5px;
+}
+
+.keys {
+    overflow: hidden;
+}
+.keys span.operator {
+    background: rgb(10,240,100);
+    margin-right: 0;
+}
+
+.keys span.eval {
+    background: rgb(10,240,100);
+    box-shadow: 0px 4px #352bc323;
+    color:black;
+    width: 212px;
+}
+
+.keys span, .top span.clear {
+    float: left;
+    position: relative;
+    top: 0;
+    background:rgba(150, 255, 112, 0.2);
+    font-size: 27px;
+    cursor: pointer;
+    width: 66px;
+    height: 46px;
+    border-radius: 1px;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    margin: 0 7px 11px 0;
+    color:black;
+    line-height: 40px;
+    text-align: center;
+    user-select: none;
+    outline: 0 solid;
+    transition: all 0.2s ease;
+}
