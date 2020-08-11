@@ -1,0 +1,44 @@
+body{
+    margin: auto;
+    background-color: #e5e5e5;
+}
+.page{
+    width:960px;
+    height: 500px;
+   position: relative;
+    background-color:#04B486;
+    margin: auto;
+}
+.screen{
+    width: 200px;
+    height: 50px;
+    position: relative;
+    border: solid;
+    border-radius: 3px;
+    background-color: skyblue;
+    box-shadow:5px;
+   margin: auto;
+   top: 100px;
+}
+
+.screen p{
+    font-size: 20px;
+   margin-left: 60px;
+  
+   padding-bottom: 25px;
+}
+ h1{
+     position: relative;
+    left: 275px;
+    top: 100px;
+    margin: auto;
+}
+.button{
+    left: 450px;
+    width: 60px;
+    height: 25px;
+    position: relative;
+    margin: auto;
+   margin: auto;
+   top: 150px;
+}
