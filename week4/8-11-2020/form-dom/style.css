@@ -1,0 +1,96 @@
+body{
+    margin: auto;
+  
+   
+}
+
+.main{
+    top: 50px;
+position: relative;
+width: 400px;
+margin: auto;
+background-color: #e2a1f5 ;
+padding: 10px;
+border-radius: 10px;
+
+padding-bottom: 50px;
+display: block;
+}
+
+label{
+    margin-left: 25px;
+    padding:15px;
+    margin-top: 20px;
+}
+
+#firstName{
+margin-left: 50px;
+margin-top: 20px;
+}
+
+#lastName{
+    margin-left: 56px;
+    margin-top: 20px;
+    }
+#Address{
+    margin-left: 74px;
+    margin-top: 20px;
+}
+#Pincode{
+    margin-left: 74px;
+    margin-top: 20px;
+}
+
+#State{
+    margin-left: 94px;
+    margin-top: 20px;
+}
+
+#Country{
+    margin-left: 74px;
+    margin-top: 20px;
+
+}
+#submit-b{
+    margin-top: 50px;
+   margin-left: 170px;
+}
+
+#male{
+    margin-top: 20px;
+    margin-left: 120px;  
+}
+#female{
+    margin-left: 222px;  
+    margin-bottom: 20px;
+}
+
+#Genderid{
+    margin-left: 25px;
+    padding:15px;
+    margin-top: 20px;
+}
+
+#fooditem1Input{
+ margin-left: 50px;
+
+}
+#fooditem2Input{
+    margin-left: 208px;
+   
+}
+#fooditem3Input{
+   margin-left: 208px;
+   
+   
+}
+#fooditem4Input{
+   margin-left: 208px;
+   
+   
+}
+#fooditem5Input{
+   margin-left: 209px;
+   
+   
+}
