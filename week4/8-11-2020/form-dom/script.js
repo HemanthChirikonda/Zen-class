@@ -1,6 +1,6 @@
 let main= document.createElement('form');
 main.setAttribute('class','main');
-main.setAttribute('action','secondpage\index.html')
+main.setAttribute('action','index2.html')
 main.setAttribute('onSubmit',' return checkForm()')
 
 
