@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oldenburg&display=swap" rel="stylesheet">
+<style>
+#game{
+    position: relative;
+   top: 50px;
+   height:120vh;
+   width: 50vw;
+  margin: auto;
+  padding: 1vw;
+background-color: rgb(47, 124, 155);
+}
+
+#header{
+
+margin-left: 10%;
+font-weight: 900;
+font-size: 6vw;
+font-family: 'Oldenburg', cursive;
+}
+#level-p{
+    font-family: 'Oldenburg', cursive;
+   float: left;
+    top: 1vw;
+    margin-right: 10%;
+    margin-left: 10%;
+
+}
+#Wrongguess{
+    position: relative;
+    float: right;
+    margin-right: 5%;
+    font-family: 'Oldenburg', cursive;
+}
+
+#hangStation{
+position: relative;
+width: 11vw;
+height: 15vw;
+margin: auto;
+
+
+}
+.image1{
+    position: relative;
+ width: 10vw;
+  
+}
+
+
+
+.alphaPage_class{
+
+    position: relative;
+   
+    padding: 0.5%;
+    align-items: center;
+    margin: auto;
+   
+    width: 50%;
+    margin-top: 10vh;
+   
+}
+
+@counter-style{
+    if(device-width<400px){
+        .alphaPage_class{
+            
+        }
+    }
+}
+
+.alpha{
+    position: relative;
+ width: 2vw;
+ margin: 0.1vw;
+ font-family: 'Oldenburg', cursive;
+ font-weight: bold;
+ background-image: url(images/wood.jpg);
+}
+
+.alpha:hover{
+    background-color: rgb(107, 86, 126);
+    
+}
+.alpha:disabled{
+    background-image: url(images/bg-1.jpg);
+}
+
+
+
+#WrongNoguess{
+    position: relative;
+float: right;
+
+}
+
+#wordArea{
+    position: relative;
+ margin-top: 10%;
+width:100%;
+height: 50%;
+float: left;
+text-align: center;
+font-size: 2vw;
+}
+
+#guessWord{
+    position: relative;
+    width: max-content;
+    margin: auto;
+
+font-size: 4vw;
+border-style: ridge;
+border-radius: 5px;
+color: snow;
+background-image: url(images/wood.jpg);
+}
+
+
+#footer{
+    position: absolute;
+    top: 112vh;
+    width: 90%;
+    margin: auto;
+    font-size: 1vw;
+    border-top: rgb(17, 16, 16) solid 1px;
+    background-color: rgb(47, 124, 155);
+}
+</style>
+
+
+</head>
+<body>
+    
+    <script src="script2.js"></script>
+</body>
+</html>
