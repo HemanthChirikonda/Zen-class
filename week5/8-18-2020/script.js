@@ -100,7 +100,7 @@ request( "https://raw.githubusercontent.com/rvsp/restcountries-json-data/master/
 
 
       card.append(cardBody);
-col6.append(card);
+      col6.append(card);
       row.append(col6);
        });
 
