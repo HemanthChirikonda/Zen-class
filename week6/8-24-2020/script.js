@@ -1,0 +1,28 @@
+var chunk = function (arry, size) { return Array.from({ length: Math.ceil(arry.length / size) }, function (j, i) {
+    return arry.slice(i * size, i * size + size);
+}); };
+console.log(chunk([1, 5, 4, 6, 3, 7, 5], 2));
+var sum = function (arry) { return (arry.reduce(function (total, item) { return total + item; }, 0)); };
+console.log(sum([1, 5, 4, 6, 3, 7, 5]));
+var filter = function (arry, cond) { return arry.filter(cond); };
+console.log(filter([1, 5, 4, 6, 3, 7, 5], (function (i) { return i < 4; })));
+var find = function (arry, cond) { return arry.find(cond); };
+console.log(find([1, 5, 4, 6, 3, 7, 5], (function (i) { return i < 6; })));
+var reduce = function (arry, funcond, result) { return (arry.reduce(funcond, result)); };
+console.log(reduce([1, 5, 4, 6, 3, 7, 5], function (i, v) { return (i + v); }, 0));
+var main = document.createElement('div');
+main.classList.add('container');
+var row1 = document.createElement('header');
+row1.id = 'header';
+row1.classList.add('header', 'rounded', 'display-3');
+row1.innerHTML = 'LODASH functions';
+main.append(row1);
+var row = document.createElement('div');
+row.classList.add('row', 'rounded');
+row.innerHTML = "<div class= 'col-12 display-4' style=\"text-align: center; \">\nFunctions </div>\n<div class= 'col-3'></div>\n<div class= 'col rounded border' >\nconst chunk = (arry, size) => Array.from({ length: Math.ceil(arry.length / size) }, (j, i) =>\n\narry.slice(i * size, i * size + size)\n);\n<br>\nconsole.log(chunk([1, 5, 4, 6, 3, 7, 5], 2));\n<br>\nconst sum = arry => (arry.reduce((total, item) => total + item, 0));\n<br>\nconsole.log(sum([1, 5, 4, 6, 3, 7, 5]));\n<br>\nconst filter = (arry, cond) => arry.filter(cond);\n<br>\nconsole.log(filter([1, 5, 4, 6, 3, 7, 5], (i => i < 4)));\n<br>\nconst find = (arry, cond) => arry.find(cond);\n<br>\nconsole.log(find([1, 5, 4, 6, 3, 7, 5], (i => i <6)));\n<br>\n\nconst reduce = (arry,funcond,result ) => (arry.reduce(funcond,result));\nconsole.log(reduce([1, 5, 4, 6, 3, 7, 5], (i,v)=> (i+v),0));\n</div>\n\n<div class= 'col-3'></div>";
+main.append(row);
+var row2 = document.createElement('div');
+row2.classList.add('row', 'rounded');
+row2.innerHTML = "<div class= 'col-12 display-4'  style=\"text-align: center; \">\nAnswers </div><div class= 'col-3'></div>\n<div class= 'col rounded border'>\nArray(4)0: (2)\u00A0[1, 5]1: (2)\u00A0[4, 6]2: (2)\u00A0[3, 7]3: [5]length: 4__proto__: Array(0)\n<br>\n 31\n <br>\n Array(2)0: 11: 3length: 2__proto__: Array(0)\n<br>\n1\n<br>\n31\n<br>\n</div>\n\n<div class= 'col-3'></div>";
+main.append(row2);
+document.body.append(main);

@@ -14,13 +14,16 @@ inputName.setAttribute("id","username")
 outer_div_end.appendChild(inputName);
 
 /*--------Save Button ---------------*/
+let a3 = document.createElement('a');
+a3.setAttribute('href','../index.html');
 let saveScoreBtn = document.createElement("button");
 saveScoreBtn.setAttribute("class", "btn btn-outline-dark");
 saveScoreBtn.setAttribute("id","saveScoreBtn");
 saveScoreBtn.setAttribute("onclick",`savedata()`);
 saveScoreBtn.setAttribute("style","border-color: grey; display:flex; margin:10px; margin-top: 10px; ");
 saveScoreBtn.innerText = " Save ";
-outer_div_end.appendChild(saveScoreBtn);
+a3.append(saveScoreBtn);
+outer_div_end.appendChild(a3);
 
 
 function savedata(){

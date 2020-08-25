@@ -191,7 +191,10 @@ function keepansers(val) {
     
    scorearray[val.name]= val.value;
    //console.log(scorearray);
+ 
    document.getElementById('score').innerText=score;
+   
+  
 }
 
 
