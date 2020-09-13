@@ -1,0 +1,148 @@
+MongoDB Enterprise > show dbs;
+admin     0.000GB
+config    0.000GB
+local     0.000GB
+petshop   0.001GB
+zenclass  0.000GB
+MongoDB Enterprise > use petshop;
+switched to db petshop
+MongoDB Enterprise > show collections;
+animals
+animaltypes
+breeds
+cards
+orderStatus
+orders
+payment_Status
+payment_mode
+typeOfCards
+users
+MongoDB Enterprise > db.users.find().pretty();
+{
+        "_id" : ObjectId("5f5dc93eae479225d851c8eb"),
+        "name" : "user1",
+        "gender" : "male",
+        "email_id" : "user1@gmail.com",
+        "password" : "******",
+        "contact_numer" : "+91 253030520",
+        "Dob" : "11-02-1990",
+        "date_of_joining" : "1-05-2020",
+        "orders" : [
+                ObjectId("5f5dc9b1da4e8cbf0d88e210"),
+                ObjectId("5f5dc9bdda4e8cbf0d88e211")
+        ],
+        "saved_cards" : [
+                ObjectId("5f5dd52cae479225d851c8fb")
+        ],
+        "cart_items" : [
+                ObjectId("5f5dc2b4ae479225d851c8e2")
+        ],
+        "wish_items" : [
+                ObjectId("5f5dc2b4ae479225d851c8e2")
+        ]
+}
+MongoDB Enterprise > db.animals.find().pretty();
+{
+        "_id" : ObjectId("5f5dc2b4ae479225d851c8e2"),
+        "animal_type" : ObjectId("5f5dc726ae479225d851c8e3"),
+        "name" : "jonny",
+        "age" : "2years",
+        "color" : "brown",
+        "img_url" : [
+                "something.png"
+        ],
+        "gender" : "male",
+        "breed" : ObjectId("5f5dc630da4e8cbf0d88e204"),
+        "price" : "15000",
+        "availability" : true
+}
+MongoDB Enterprise > db.animaltypes.find().pretty();
+{
+        "_id" : ObjectId("5f5dc726ae479225d851c8e3"),
+        "type" : "dog",
+        "breeds" : [
+                ObjectId("5f5dc772da4e8cbf0d88e208")
+        ],
+        "animals_LIst" : [
+                ObjectId("5f5dc7bdda4e8cbf0d88e209")
+        ]
+}
+{
+        "_id" : ObjectId("5f5dc7eaae479225d851c8e8"),
+        "type" : "cat",
+        "breeds" : [
+                ObjectId("5f5dc772da4e8cbf0d88e208")
+        ],
+        "animals_LIst" : [
+                ObjectId("5f5dc7bdda4e8cbf0d88e209")
+        ]
+}
+{
+        "_id" : ObjectId("5f5dc7f2ae479225d851c8e9"),
+        "type" : "fish",
+        "breeds" : [
+                ObjectId("5f5dc772da4e8cbf0d88e208")
+        ],
+        "animals_LIst" : [
+                ObjectId("5f5dc7bdda4e8cbf0d88e209")
+        ]
+}
+MongoDB Enterprise > db.breeds.find().pretty();
+{
+        "_id" : ObjectId("5f5dc852ae479225d851c8ea"),
+        "name" : "German Shepherd",
+        "animals" : [
+                ObjectId("5f5dc860da4e8cbf0d88e20b")
+        ],
+        "type_of_animal" : ObjectId("5f5dc726ae479225d851c8e3")
+}
+MongoDB Enterprise > db.cards.find().pretty();
+{
+        "_id" : ObjectId("5f5dd52cae479225d851c8fb"),
+        "type" : ObjectId("5f5de987ae479225d851c8fc"),
+        "card_number" : 12524568756,
+        "from_date" : ISODate("1999-12-31T18:30:00Z"),
+        "exp_date" : ISODate("2025-01-01T00:00:00Z")
+}
+MongoDB Enterprise > db.orders.find().pretty();
+{
+        "_id" : ObjectId("5f5dcf80ae479225d851c8ec"),
+        "items" : [
+                ObjectId("5f5dc2b4ae479225d851c8e2")
+        ],
+        "userId" : [
+                ObjectId("5f5dc93eae479225d851c8eb")
+        ],
+        "total" : NumberDecimal("555"),
+        "status" : ObjectId("5f5dd08eae479225d851c8ed"),
+        "payment_mode" : ObjectId("5f5dd393ae479225d851c8f5"),
+        "payment-status" : ObjectId("5f5dd3e0da4e8cbf0d88e220")
+}
+MongoDB Enterprise > db.payment_Status.find().pretty();
+{ "_id" : ObjectId("5f5dd372ae479225d851c8f4"), "status" : "in complete" }
+{ "_id" : ObjectId("5f5dd393ae479225d851c8f5"), "status" : "successfull" }
+{ "_id" : ObjectId("5f5dd3acae479225d851c8f6"), "status" : "failed" }
+MongoDB Enterprise > db.payment_mode.find().pretty();
+{ "_id" : ObjectId("5f5dd424ae479225d851c8f7"), "mode" : "cash on delivery" }
+{ "_id" : ObjectId("5f5dd479ae479225d851c8f8"), "mode" : "internet banking" }
+{ "_id" : ObjectId("5f5dd497ae479225d851c8fa"), "mode" : "UPI" }
+{ "_id" : ObjectId("5f5deab7ae479225d851c8fe"), "mode" : "Debit card" }
+{ "_id" : ObjectId("5f5deac4ae479225d851c8ff"), "mode" : "credit card" }
+MongoDB Enterprise > db.typeOfCards.find().pretty();
+{ "_id" : ObjectId("5f5de987ae479225d851c8fc"), "type" : "Debit" }
+{ "_id" : ObjectId("5f5de99dae479225d851c8fd"), "type" : "credit" }
+MongoDB Enterprise > db.orders.find().pretty();
+{
+        "_id" : ObjectId("5f5dcf80ae479225d851c8ec"),
+        "items" : [
+                ObjectId("5f5dc2b4ae479225d851c8e2")
+        ],
+        "userId" : [
+                ObjectId("5f5dc93eae479225d851c8eb")
+        ],
+        "total" : NumberDecimal("555"),
+        "status" : ObjectId("5f5dd08eae479225d851c8ed"),
+        "payment_mode" : ObjectId("5f5dd393ae479225d851c8f5"),
+        "payment-status" : ObjectId("5f5dd3e0da4e8cbf0d88e220")
+}
+MongoDB Enterprise >  
