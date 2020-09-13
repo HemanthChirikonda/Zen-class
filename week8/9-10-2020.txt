@@ -1,0 +1,273 @@
+Microsoft Windows [Version 10.0.18362.1082]
+(c) 2019 Microsoft Corporation. All rights reserved.
+
+C:\Users\Hemanth>mongo
+MongoDB shell version v4.4.1
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("3661ed0c-677e-48f1-b712-332426668740") }
+MongoDB server version: 4.4.1
+---
+The server generated these startup warnings when booting:
+        2020-09-13T09:35:13.178+05:30: ***** SERVER RESTARTED *****
+        2020-09-13T09:35:43.225+05:30: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+---
+MongoDB Enterprise > show dbs;
+admin     0.000GB
+config    0.000GB
+local     0.000GB
+zenclass  0.000GB
+MongoDB Enterprise > use zenclass
+switched to db zenclass
+MongoDB Enterprise > db.zenclass.find().pretty();
+MongoDB Enterprise > db.zenclass.student.find().pretty();
+MongoDB Enterprise > db.student.find().pretty();
+{
+        "_id" : ObjectId("5f5c5a0fcc9d9196380575f0"),
+        "name" : "person1",
+        "position" : "",
+        "email_id" : "person1@gmail.com",
+        "password" : "******",
+        "contact_numer" : "+91 852027849",
+        "Dob" : "",
+        "date_of_joining" : "",
+        "Attendence" : [
+                ObjectId("5f5db452da4e8cbf0d88e1c8"),
+                ObjectId("5f5db460da4e8cbf0d88e1c9"),
+                ObjectId("5f5db475da4e8cbf0d88e1ca"),
+                ObjectId("5f5db47dda4e8cbf0d88e1cb")
+        ],
+        "tasks" : [
+                ObjectId("5f5db4aeda4e8cbf0d88e1cc"),
+                ObjectId("5f5db4b9da4e8cbf0d88e1cd")
+        ],
+        "courses" : [
+                ObjectId("5f5db4c7da4e8cbf0d88e1ce"),
+                ObjectId("5f5db4d0da4e8cbf0d88e1cf")
+        ],
+        "assiened_mentor" : ObjectId("5f5db4d9da4e8cbf0d88e1d0")
+}
+{
+        "_id" : ObjectId("5f5daaddae479225d851c8d9"),
+        "name" : "person2",
+        "position" : "student",
+        "email_id" : "person2@gmail.com",
+        "password" : "******",
+        "contact_numer" : "+91 524567849",
+        "Dob" : "",
+        "date_of_joining" : "",
+        "Attendence" : [
+                ObjectId("5f5db5c2da4e8cbf0d88e1d1"),
+                ObjectId("5f5db5c9da4e8cbf0d88e1d2"),
+                ObjectId("5f5db5ceda4e8cbf0d88e1d3"),
+                ObjectId("5f5db5d2da4e8cbf0d88e1d4")
+        ],
+        "tasks" : [
+                ObjectId("5f5db5e4da4e8cbf0d88e1d5"),
+                ObjectId("5f5db5fada4e8cbf0d88e1d6"),
+                ObjectId("5f5db602da4e8cbf0d88e1d7")
+        ],
+        "courses" : [
+                ObjectId("5f5db60eda4e8cbf0d88e1d8")
+        ],
+        "assiened_mentor" : ObjectId("5f5db6aeda4e8cbf0d88e1d9")
+}
+{
+        "_id" : ObjectId("5f5daaf3ae479225d851c8da"),
+        "name" : "person3",
+        "position" : "student",
+        "email_id" : "person3@gmail.com",
+        "password" : "******",
+        "contact_numer" : "+91 864567849",
+        "Dob" : "",
+        "date_of_joining" : "",
+        "Attendence" : [
+                ObjectId("5f5db6c3da4e8cbf0d88e1da"),
+                ObjectId("5f5db6cbda4e8cbf0d88e1db"),
+                ObjectId("5f5db6d1da4e8cbf0d88e1dc"),
+                ObjectId("5f5db6d6da4e8cbf0d88e1dd")
+        ],
+        "tasks" : [
+                ObjectId("5f5db6eeda4e8cbf0d88e1de"),
+                ObjectId("5f5db6f5da4e8cbf0d88e1df")
+        ],
+        "courses" : [
+                ObjectId("5f5db700da4e8cbf0d88e1e0"),
+                ObjectId("5f5db708da4e8cbf0d88e1e1")
+        ],
+        "assiened_mentor" : ObjectId("5f5db716da4e8cbf0d88e1e2")
+}
+MongoDB Enterprise > db.mentor.find().pretty();
+{
+        "_id" : ObjectId("5f5c5dcdcc9d9196380575f2"),
+        "name" : "mentor1",
+        "position" : "mentor",
+        "email_id" : "mentor1@gmail.com",
+        "password" : "******",
+        "contact_numer" : "+91  446630520",
+        "Dob" : "12-05-1990",
+        "date_of_joining" : "12-05-2020",
+        "Attendence" : [
+                ObjectId("5f5db737da4e8cbf0d88e1e4"),
+                ObjectId("5f5db740da4e8cbf0d88e1e5")
+        ],
+        "specialization" : [
+                ObjectId("5f5db74ada4e8cbf0d88e1e6"),
+                ObjectId("5f5db750da4e8cbf0d88e1e7")
+        ],
+        "studentsId" : [
+                ObjectId("5f5c5a0fcc9d9196380575f0"),
+                ObjectId("5f5db75bda4e8cbf0d88e1e8")
+        ]
+}
+{
+        "_id" : ObjectId("5f5da9baae479225d851c8d6"),
+        "name" : "mentor2",
+        "position" : "mentor",
+        "email_id" : "mentor1@gmail.com",
+        "password" : "******",
+        "contact_numer" : "+91  44443030520",
+        "Dob" : "11-02-1990",
+        "date_of_joining" : "1-05-2020",
+        "Attendence" : [
+                ObjectId("5f5db92ada4e8cbf0d88e1f1"),
+                ObjectId("5f5db931da4e8cbf0d88e1f2"),
+                ObjectId("5f5db939da4e8cbf0d88e1f3")
+        ],
+        "specialization" : [
+                ObjectId("5f5db941da4e8cbf0d88e1f4")
+        ],
+        "studentsId" : [
+                ObjectId("5f5db948da4e8cbf0d88e1f5")
+        ]
+}
+{
+        "_id" : ObjectId("5f5daa21ae479225d851c8d7"),
+        "name" : "mentor3",
+        "position" : "mentor",
+        "email_id" : "mentor3@gmail.com",
+        "password" : "******",
+        "contact_numer" : "+91  5997430520",
+        "Dob" : "1-02-1988",
+        "date_of_joining" : "1-02-2015",
+        "Attendence" : [
+                ObjectId("5f5db8cfda4e8cbf0d88e1ea"),
+                ObjectId("5f5db8d8da4e8cbf0d88e1eb"),
+                ObjectId("5f5db8e1da4e8cbf0d88e1ec")
+        ],
+        "specialization" : [
+                ObjectId("5f5db8e9da4e8cbf0d88e1ed")
+        ],
+        "studentsId" : [
+                ObjectId("5f5db8f4da4e8cbf0d88e1ee"),
+                ObjectId("5f5db8fcda4e8cbf0d88e1ef"),
+                ObjectId("5f5db902da4e8cbf0d88e1f0")
+        ]
+}
+{
+        "_id" : ObjectId("5f5daa52ae479225d851c8d8"),
+        "name" : "mentor4",
+        "position" : "mentor",
+        "email_id" : "mentor4@gmail.com",
+        "password" : "******",
+        "contact_numer" : "+91  794130520",
+        "Dob" : "1-01-1991",
+        "date_of_joining" : "1-05-2019",
+        "Attendence" : [ ],
+        "specialization" : [ ],
+        "studentsId" : [ ]
+}
+MongoDB Enterprise > db.task.find().pretty();
+{
+        "_id" : ObjectId("5f5dab72ae479225d851c8db"),
+        "name" : "",
+        "input_url" : "",
+        "gitHub_url" : "",
+        "netlify_url" : "",
+        "comments" : "",
+        "marks" : "",
+        "mentor" : ""
+}
+MongoDB Enterprise > db.job.find().pretty();
+MongoDB Enterprise > db.jobs.find().pretty();
+{
+        "_id" : ObjectId("5f5db24bae479225d851c8dd"),
+        "job_name" : "",
+        "job_discription" : "",
+        "salary" : "",
+        "requriments" : "",
+        "companies" : [
+                ObjectId("5f5db9bcda4e8cbf0d88e1f8"),
+                ObjectId("5f5db9c7da4e8cbf0d88e1f9")
+        ]
+}
+MongoDB Enterprise > db.companie.find().pretty();
+MongoDB Enterprise > db.company.find().pretty();
+{
+        "_id" : ObjectId("5f5db1a0ae479225d851c8dc"),
+        "name" : "",
+        "url" : "",
+        "discripton" : "",
+        "jobs" : [
+                ObjectId("5f5db9d9da4e8cbf0d88e1fa")
+        ],
+        "contactperson" : [
+                ObjectId("5f5db9fcda4e8cbf0d88e1fb")
+        ]
+}
+MongoDB Enterprise > db.attendence.find().pretty();
+MongoDB Enterprise > db.attendence.find().pretty();
+MongoDB Enterprise > db.attendence.find();
+MongoDB Enterprise > db.zenclass.find();
+MongoDB Enterprise > db.attendence.find();
+MongoDB Enterprise > db.attendence.find();
+MongoDB Enterprise > use zenclass
+switched to db zenclass
+MongoDB Enterprise > db.attendence.find().pretty();
+MongoDB Enterprise > db.attendence.find().pretty();
+MongoDB Enterprise > show collections;
+attendence
+company
+jobs
+mentor
+student
+task
+zenclass
+MongoDB Enterprise > show fields;
+uncaught exception: Error: don't know how to show [fields] :
+shellHelper.show@src/mongo/shell/utils.js:1191:11
+shellHelper@src/mongo/shell/utils.js:819:15
+@(shellhelp2):1:1
+MongoDB Enterprise > attendence show fields;
+uncaught exception: SyntaxError: unexpected token: identifier :
+@(shell):1:11
+MongoDB Enterprise > db.attendence show fields;
+uncaught exception: SyntaxError: unexpected token: identifier :
+@(shell):1:14
+MongoDB Enterprise > show collections;
+attendence
+company
+jobs
+mentor
+student
+task
+zenclass
+MongoDB Enterprise > db.attendence.find();
+MongoDB Enterprise > db.company.find();
+{ "_id" : ObjectId("5f5db1a0ae479225d851c8dc"), "name" : "", "url" : "", "discripton" : "", "jobs" : [ ObjectId("5f5db9d9da4e8cbf0d88e1fa") ], "contactperson" : [ ObjectId("5f5db9fcda4e8cbf0d88e1fb") ] }
+MongoDB Enterprise > db.jobs.find();
+{ "_id" : ObjectId("5f5db24bae479225d851c8dd"), "job_name" : "", "job_discription" : "", "salary" : "", "requriments" : "", "companies" : [ ObjectId("5f5db9bcda4e8cbf0d88e1f8"), ObjectId("5f5db9c7da4e8cbf0d88e1f9") ] }
+MongoDB Enterprise > db.mentor.find();
+{ "_id" : ObjectId("5f5c5dcdcc9d9196380575f2"), "name" : "mentor1", "position" : "mentor", "email_id" : "mentor1@gmail.com", "password" : "******", "contact_numer" : "+91  446630520", "Dob" : "12-05-1990", "date_of_joining" : "12-05-2020", "Attendence" : [ ObjectId("5f5db737da4e8cbf0d88e1e4"), ObjectId("5f5db740da4e8cbf0d88e1e5") ], "specialization" : [ ObjectId("5f5db74ada4e8cbf0d88e1e6"), ObjectId("5f5db750da4e8cbf0d88e1e7") ], "studentsId" : [ ObjectId("5f5c5a0fcc9d9196380575f0"), ObjectId("5f5db75bda4e8cbf0d88e1e8") ] }
+{ "_id" : ObjectId("5f5da9baae479225d851c8d6"), "name" : "mentor2", "position" : "mentor", "email_id" : "mentor1@gmail.com", "password" : "******", "contact_numer" : "+91  44443030520", "Dob" : "11-02-1990", "date_of_joining" : "1-05-2020", "Attendence" : [ ObjectId("5f5db92ada4e8cbf0d88e1f1"), ObjectId("5f5db931da4e8cbf0d88e1f2"), ObjectId("5f5db939da4e8cbf0d88e1f3") ], "specialization" : [ ObjectId("5f5db941da4e8cbf0d88e1f4") ], "studentsId" : [ ObjectId("5f5db948da4e8cbf0d88e1f5") ] }
+{ "_id" : ObjectId("5f5daa21ae479225d851c8d7"), "name" : "mentor3", "position" : "mentor", "email_id" : "mentor3@gmail.com", "password" : "******", "contact_numer" : "+91  5997430520", "Dob" : "1-02-1988", "date_of_joining" : "1-02-2015", "Attendence" : [ ObjectId("5f5db8cfda4e8cbf0d88e1ea"), ObjectId("5f5db8d8da4e8cbf0d88e1eb"), ObjectId("5f5db8e1da4e8cbf0d88e1ec") ], "specialization" : [ ObjectId("5f5db8e9da4e8cbf0d88e1ed") ], "studentsId" : [ ObjectId("5f5db8f4da4e8cbf0d88e1ee"), ObjectId("5f5db8fcda4e8cbf0d88e1ef"), ObjectId("5f5db902da4e8cbf0d88e1f0") ] }
+{ "_id" : ObjectId("5f5daa52ae479225d851c8d8"), "name" : "mentor4", "position" : "mentor", "email_id" : "mentor4@gmail.com", "password" : "******", "contact_numer" : "+91  794130520", "Dob" : "1-01-1991", "date_of_joining" : "1-05-2019", "Attendence" : [ ], "specialization" : [ ], "studentsId" : [ ] }
+MongoDB Enterprise > db.student.find();
+{ "_id" : ObjectId("5f5c5a0fcc9d9196380575f0"), "name" : "person1", "position" : "", "email_id" : "person1@gmail.com", "password" : "******", "contact_numer" : "+91 852027849", "Dob" : "", "date_of_joining" : "", "Attendence" : [ ObjectId("5f5db452da4e8cbf0d88e1c8"), ObjectId("5f5db460da4e8cbf0d88e1c9"), ObjectId("5f5db475da4e8cbf0d88e1ca"), ObjectId("5f5db47dda4e8cbf0d88e1cb") ], "tasks" : [ ObjectId("5f5db4aeda4e8cbf0d88e1cc"), ObjectId("5f5db4b9da4e8cbf0d88e1cd") ], "courses" : [ ObjectId("5f5db4c7da4e8cbf0d88e1ce"), ObjectId("5f5db4d0da4e8cbf0d88e1cf") ], "assiened_mentor" : ObjectId("5f5db4d9da4e8cbf0d88e1d0") }
+{ "_id" : ObjectId("5f5daaddae479225d851c8d9"), "name" : "person2", "position" : "student", "email_id" : "person2@gmail.com", "password" : "******", "contact_numer" : "+91 524567849", "Dob" : "", "date_of_joining" : "", "Attendence" : [ ObjectId("5f5db5c2da4e8cbf0d88e1d1"), ObjectId("5f5db5c9da4e8cbf0d88e1d2"), ObjectId("5f5db5ceda4e8cbf0d88e1d3"), ObjectId("5f5db5d2da4e8cbf0d88e1d4") ], "tasks" : [ ObjectId("5f5db5e4da4e8cbf0d88e1d5"), ObjectId("5f5db5fada4e8cbf0d88e1d6"), ObjectId("5f5db602da4e8cbf0d88e1d7") ], "courses" : [ ObjectId("5f5db60eda4e8cbf0d88e1d8") ], "assiened_mentor" : ObjectId("5f5db6aeda4e8cbf0d88e1d9") }
+{ "_id" : ObjectId("5f5daaf3ae479225d851c8da"), "name" : "person3", "position" : "student", "email_id" : "person3@gmail.com", "password" : "******", "contact_numer" : "+91 864567849", "Dob" : "", "date_of_joining" : "", "Attendence" : [ ObjectId("5f5db6c3da4e8cbf0d88e1da"), ObjectId("5f5db6cbda4e8cbf0d88e1db"), ObjectId("5f5db6d1da4e8cbf0d88e1dc"), ObjectId("5f5db6d6da4e8cbf0d88e1dd") ], "tasks" : [ ObjectId("5f5db6eeda4e8cbf0d88e1de"), ObjectId("5f5db6f5da4e8cbf0d88e1df") ], "courses" : [ ObjectId("5f5db700da4e8cbf0d88e1e0"), ObjectId("5f5db708da4e8cbf0d88e1e1") ], "assiened_mentor" : ObjectId("5f5db716da4e8cbf0d88e1e2") }
+MongoDB Enterprise > db.find();
+uncaught exception: TypeError: db.find is not a function :
+@(shell):1:1
+MongoDB Enterprise > db.task();
+uncaught exception: TypeError: db.task is not a function :
+@(shell):1:1
